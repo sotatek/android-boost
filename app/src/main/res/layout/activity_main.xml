@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <TextView android:id="@+id/titleLabel"
+              android:text="Demo login with Boost"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+        android:textSize="24dp" />
+
+    <EditText
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameInput"
+        android:hint="Input your username"
+        android:layout_below="@+id/titleLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/nameInput"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Log:"
+        android:id="@+id/logLabel"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/titleLabel"
+        android:layout_marginTop="300dp"
+        android:textColor="#ff385b"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/logContent"
+        android:layout_below="@+id/logLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/chatView"
+        android:layout_below="@+id/titleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/logContent"
+        android:layout_alignEnd="@+id/logContent"
+        android:visibility="visible"
+        android:background="#6bffbd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:id="@+id/chatButton"
+        android:layout_below="@+id/chatView"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatInput"
+        android:hint=""
+        android:layout_below="@+id/chatView"
+        android:layout_toLeftOf="@+id/chatButton"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible" />
+
+</RelativeLayout>
