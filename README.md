@@ -123,3 +123,6 @@ def getNdkBuildCmd() {
 - The bridge function `Java_com_sotatek_androidboost_RequestFactory_requestAsync` (that is defined in `funcs_async.cpp`) is called corresponding in C++ side.
 - The bridge function create request service/object/thread and handle the connection with server, using Boost Asio library.
 - When server response is returned, C++ side will call function `OnServerResponse`, it calls function `onJNICallback` of `RequestFactory` next and result will be handled and display in Java side.
+
+#### Sequence diagram
+![Flow diagram](https://raw.githubusercontent.com/sotatek/android-boost/master/docs/flow_diagram.png)
