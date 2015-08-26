@@ -124,5 +124,5 @@ def getNdkBuildCmd() {
 - The bridge function create request service/object/thread and handle the connection with server, using Boost Asio library.
 - When server response is returned, C++ side will call function `OnServerResponse`, it calls function `onJNICallback` of `RequestFactory` next and result will be handled and display in Java side.
 
-#### Sequence diagram
+#### Request sequence diagram
 ![Flow diagram](https://raw.githubusercontent.com/sotatek/android-boost/master/docs/flow_diagram.png)
